@@ -1,6 +1,6 @@
 import requests
 import time
-from bs4 import BeautifulSoup  #установите 'lxml' (pip install lxml)
+from bs4 import BeautifulSoup  #в терминале напишите pip install -r requirements.txt
 API_URL = 'https://api.telegram.org/bot'
 API_CATS_URL = 'https://mimimi.ru/random'
 BOT_TOKEN = your_token
