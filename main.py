@@ -15,7 +15,7 @@ while True:
     print('attempt =', counter)
     updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
     if updates['result']:
-        text = f"{updates['result'][0]['message']['text']} конечно хорошо, но лучше картика с котиком! (для Максима нюдсы в раработке)"
+        text = f"{updates['result'][0]['message']['text']} конечно хорошо, но лучше картика с котиком!"
         for result in updates['result']:
             offset = result['update_id']
             chat_id = result['message']['from']['id']
